@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <style>
+        	ul {
+        		list-style-type: none;
+
+        		width:100%;
+        		margin:0;
+        		margin-top:-25px;
+        		padding:0;
+        	}
+
+        	li {
+        		font-family:"Arial Black";
+        		margin:0 0 -28px; padding:0;
+        		text-align:center;
+        		text-transform:uppercase;
+        		font-size:40px;
+        		/*letter-spacing:0.05em;*/
+        		font-weight:bold;
+        		
+        	}
+
+        	.stretch {
+        		 display:inline-block;
+        		 
+        		 transition:all 0.2s;
+        	
+        	}
+
+        	li:hover .stretch {
+        		cursor:pointer;
+        		transform:scale(1,1)!important;
+        	}
+
+     
+        	.stretch {
+        		display:inline-block;
+        		transform:scale(2,1);
+        	}
+        	.red {
+        		display:inline-block;
+        		background:red;
+        	}
+        
+    	</style>
+    </head>
+    <body>
+
+
+
+
+    		<ul>
+    			<li><span class="stretch">Austerity Blues</span></li>
+				<li><span class="stretch">Fuck Off Get Free (For the Island of Montreal)</span></li>
+				<li><span class="stretch">The State Itself Did Not Agree</span></li>
+				<li><span class="stretch">Take Away These Early Grave Blues</span></li>
+				<li><span class="stretch">'Piphany Rambler</span></li>
+				<li><span class="stretch">All The Kings Are Dead</span></li>
+				<li><span class="stretch">What We Loved Was Not Enough</span></li>
+				<li><span class="stretch">God Bless Our Dead Marines</span></li>
+				<li><span class="stretch">Mountains Made of Steam</span></li>
+				<li><span class="stretch">Horses in the Sky</span></li>
+				<li><span class="stretch">Teddy Roosevelt's Guns</span></li>
+					<li><span class="stretch">Austerity Blues</span></li>
+				<li><span class="stretch">Fuck Off Get Free (For the Island of Montreal)</span></li>
+				<li><span class="stretch">The State Itself Did Not Agree</span></li>
+				<li><span class="stretch">Take Away These Early Grave Blues</span></li>
+				<li><span class="stretch">'Piphany Rambler</span></li>
+				<li><span class="stretch">All The Kings Are Dead</span></li>
+				<li><span class="stretch">What We Loved Was Not Enough</span></li>
+				<li><span class="stretch">God Bless Our Dead Marines</span></li>
+				<li><span class="stretch">Mountains Made of Steam</span></li>
+				<li><span class="stretch">Horses in the Sky</span></li>
+				<li><span class="stretch">Teddy Roosevelt's Guns</span></li>
+							<li><span class="stretch">All The Kings Are Dead</span></li>
+				<li><span class="stretch">What We Loved Was Not Enough</span></li>
+				<li><span class="stretch">God Bless Our Dead Marines</span></li>
+				<li><span class="stretch">Mountains Made of Steam</span></li>
+				<li><span class="stretch">Horses in the Sky</span></li>
+				<li><span class="stretch">Teddy Roosevelt's Guns</span></li>
+					<li><span class="stretch">Austerity Blues</span></li>
+				<li><span class="stretch">Fuck Off Get Free (For the Island of Montreal)</span></li>
+				<li><span class="stretch">The State Itself Did Not Agree</span></li>
+				<li><span class="stretch">Take Away These Early Grave Blues</span></li>
+				<li><span class="stretch">'Piphany Rambler</span></li>
+				<li><span class="stretch">All The Kings Are Dead</span></li>
+				<li><span class="stretch">What We Loved Was Not Enough</span></li>
+				<li><span class="stretch">God Bless Our Dead Marines</span></li>
+				<li><span class="stretch">Mountains Made of Steam</span></li>
+				<li><span class="stretch">Horses in the Sky</span></li>
+			</ul>
+
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>
+ 				
+
+
+
+
+        		//LOOP THROUGH ALL THE DIVS CALLED STRETCH
+        			//CALCULATE HOW MUCH EACH STRETCH NEEDS TO BE STRETCHED
+        			//STRETCH BASED ON THAT CALCULATION
+
+
+        			$(".stretch").each(function(){
+        				chem = $(this).parent("li").width()/$(this).width() 
+        				$(this).css("transform","scale("+chem+",1)")
+        			})
+
+
+
+
+ 				// $(".stretch").each(function(){
+ 				// 	scaleRatio = $(window).width()/$(this).width();
+ 					
+ 				// 	console.log(scaleRatio);
+ 				// 	 $(this).css({'transform':"scale("+scaleRatio+",1)"});
+
+ 				// 	//$(this).css({'transform':"scale(2,1)"});
+ 				// })
+
+
+        </script>
+    </body>
+</html>
